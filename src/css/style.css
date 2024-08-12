@@ -1,0 +1,71 @@
+/* CSS RESET 2024 */
+
+/* remove default spacing. */
+/* force styling of type through styling, rather than elements. */
+/* makes sizing simpler */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* dark mode user-agent-styles. */
+/* 1 Rem = 10px. */
+html {
+  color-scheme: dark light;
+  font-size: 62.5%;
+}
+
+/* min body height. */
+body {
+  min-height: 100dvh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* prevent text orphans (single words on last line). */
+p {
+  text-wrap: pretty;
+}
+
+/* balance headings across multiple lines into an even block. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
