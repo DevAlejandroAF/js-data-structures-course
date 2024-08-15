@@ -24,6 +24,7 @@ html {
 /* min body height. */
 body {
   min-height: 100dvh;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 input,

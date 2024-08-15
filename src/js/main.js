@@ -145,6 +145,10 @@ const request = async (url) => {
   return data;
 }
 
-const data = request("https://jsonplaceholder.typicode.com/users");
+const printData = async () => {
+  const data = await request("https://jsonplaceholder.typicode.com/users");
+  console.log(data);
+}
 
-console.log(data);
+printData();
+
